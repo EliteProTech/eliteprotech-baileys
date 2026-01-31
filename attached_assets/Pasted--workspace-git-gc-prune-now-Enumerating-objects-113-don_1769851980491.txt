@@ -1,0 +1,47 @@
+~/workspace$ git gc --prune=now
+Enumerating objects: 113, done.
+Counting objects: 100% (113/113), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (98/98), done.
+Writing objects: 100% (113/113), done.
+Total 113 (delta 20), reused 96 (delta 13), pack-reused 0 (from 0)
+~/workspace$ git repack -a -d
+Enumerating objects: 113, done.
+Counting objects: 100% (113/113), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (91/91), done.
+Writing objects: 100% (113/113), done.
+Total 113 (delta 20), reused 113 (delta 20), pack-reused 0 (from 0)
+~/workspace$ git push origin main --force
+Enumerating objects: 111, done.
+Counting objects: 100% (111/111), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (91/91), done.
+Writing objects: 100% (111/111), 866.29 KiB | 72.19 MiB/s, done.
+Total 111 (delta 18), reused 110 (delta 18), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (18/18), done.
+remote: fatal: did not receive expected object 105f41c116ee745c5e5ff47f3b63a23deed9e9a1
+error: remote unpack failed: index-pack failed
+To https://github.com/mauricegift/gifted-baileys
+ ! [remote rejected] main -> main (failed)
+error: failed to push some refs to 'https://github.com/mauricegift/gifted-baileys'
+~/workspace$ git add -A
+git commit --amend -m "Initial commit"
+git push origin main --force
+[main 21a90cb] Initial commit
+ Author: mauricegift045 <42787409-mauricegift045@users.noreply.replit.com>
+ Date: Sat Jan 31 09:20:44 2026 +0000
+ 1 file changed, 24 insertions(+), 2 deletions(-)
+Enumerating objects: 111, done.
+Counting objects: 100% (111/111), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (91/91), done.
+Writing objects: 100% (111/111), 866.06 KiB | 108.26 MiB/s, done.
+Total 111 (delta 18), reused 110 (delta 18), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (18/18), done.
+remote: fatal: did not receive expected object 105f41c116ee745c5e5ff47f3b63a23deed9e9a1
+error: remote unpack failed: index-pack failed
+To https://github.com/mauricegift/gifted-baileys
+ ! [remote rejected] main -> main (failed)
+error: failed to push some refs to 'https://github.com/mauricegift/gifted-baileys'
+~/workspace$ 
