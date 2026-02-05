@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Gifted-Baileys</h1>
+  <h1>EliteProTech-Baileys</h1>
   <p>A WebSocket-based JavaScript library for interacting with the WhatsApp Web API</p>
   
   [![npm version](https://img.shields.io/npm/v/gifted-baileys.svg)](https://www.npmjs.com/package/gifted-baileys)
