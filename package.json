@@ -1,6 +1,6 @@
 {
     "name": "eliteprotech-baileys",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A lightweight, full-featured WhatsApp Web API library for Node.js, modified by EliteProTech",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -14,7 +14,8 @@
         "baileys",
         "whatsapp-bot",
         "messaging",
-        "chat"
+        "chat",
+        "eliteprotech-baileys"
     ],
     "dependencies": {
         "@cacheable/node-cache": "^1.4.0",
