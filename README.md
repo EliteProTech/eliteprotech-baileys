@@ -109,18 +109,6 @@ await sock.sendMessage(jid, {
 
 Sticker packs can be generated and sent with one native socket method. Pass image `Buffer` values in the images array.
 
-```javascript
-await sock.sendStickerPack(
-  jid,
-  [image1, image2, image3],
-  {
-    name: 'EliteProTech',
-    publisher: 'EliteProTech',
-    description: 'EliteProTech Sticker Pack'
-  }
-)
-```
-
 The method automatically:
 
 - Builds the sticker pack
@@ -140,7 +128,7 @@ await sock.sendStickerPack(
     publisher: 'EliteProTech',
     description: 'EliteProTech Sticker Pack'
   },
-  { quoted: message }
+  { quoted: m }
 )
 ```
 
